@@ -228,9 +228,22 @@ table {
 
 /*------------------------- media query style----------------------- */
 
+/*-----------for tab media query---------------- */
+@media (max-width:1030px) {
+    
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        grid-column-gap: 0;
+        width: 690px;
+    }
+
+/*------------------ media query for phone --------------------------------------------*/
+
 @media (max-width:688px) {
 
-    /* -------header media query----- */
+    /* -------header media query for phone----- */
 
     .header-content{
         height: 695px;
@@ -258,7 +271,7 @@ table {
         margin: 50px 16px 61px 15px;
     }
 
-    /* ---------------main media query--------------- */
+    /* ---------------main media query  for phone--------------- */
 
     .main{
         margin-top: 47px;   
@@ -295,17 +308,4 @@ table {
     
 }
 
-/* ----------------tab media query------------- */
-
- /* ---------------main media query--------------- */
-@media (max-width:1030px) {
-    
-
-.players{
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-    grid-column-gap: 0;
-    width: 690px;
-}
-}
 
