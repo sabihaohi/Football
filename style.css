@@ -1,11 +1,15 @@
-/* ---------------google fonts--------- */
+
+/* ---------------Google Fonts--------- */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
-/* ---------------header style --------------*/
+/* ---------------Header Style --------------*/
+
 *{
     padding: 0;
     margin: 0;
 }
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -47,15 +51,37 @@ body{
     height: 438px;
     width:556px;
     margin: 153px 140px 86px 102px;
+    transition: transform ease-in-out 4s;
 }
-/*-------------------- animation effet-------------------------------*/
+
+/*-------------------- Animation Effect-------------------------------*/
+
 .header-content:hover img{
-    transform: rotate(360deg) scale(1);
-    transition: 10s ease-in-out;
+    transform: scale(0.5);
 }
 
+.header-content:hover {
+    animation: color-change 3s infinite;
+}
 
-/*-------------------- player information-------------------- */
+/*------------------- Create Animation---------------------- */
+
+@keyframes color-change {
+    0% {
+        background-color: #142850;
+    }
+    25% {
+        background-color: #27496D;
+    }
+    50% {
+        background-color:#00909E;
+    }
+    100% {
+        background-color: #350B40;
+    }
+}
+
+/*-------------------- Main Players Style -------------------- */
 .main{
     display: flex;
     justify-content: center;
@@ -113,37 +139,35 @@ body{
     margin-top: 70px;
 
 }
+
 .result h2{
     font-size: 30px;
     text-align: center;
 }
+
 .result p{
     background-color:hsl(226, 11%, 63%);
     width: 500px;
     text-align: center;
     margin-top: 20px;
 }
+
 .match-ratio{
     display: flex;
     justify-content: center;
     margin: 20px;
 }
-.argentina {
+
+.argentina, .brazil {
     font-weight: 700;
 }
-.argentina span{
+
+.argentina span, .brazil span{
     background-color: sandybrown;
     padding: 5px 10px;
     margin-right:5px ;
 }
-.brazil{
-    font-weight: 700;
-}
-.brazil span{
-    background-color: sandybrown;
-    padding: 5px 10px;
-    margin-right:5px ;
-}
+
 .result a{
     text-decoration: none;
     background-image: linear-gradient(white,sandybrown);
@@ -151,99 +175,121 @@ body{
     border-radius: 20px;
     color:black;
 }
+
 .view-all-result{
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
+/*------------------ extra part2 style------------------ */
 
-
-
-/* ------------footer style------------- */
- .footer-content{
-     display: flex;
-     justify-content: center;
-
-
- }
- .footer{
-    height: 213px;
-    width: 483px;
-    margin:158px 481px 63px 475px;
-
- }
-.footer-image img{
-    width: 100%;
+.about-messi{
+    display: flex;
+    justify-content: center;
+    
 }
 
-.footer-icon{
-    height: 32px;
-    width: 200px;
-    margin:20px 156px;
-
-}
-
-.footer-icon a{
-    font-size: 17px;
-    color:hsl(226, 11%, 63%);
-    padding:8px;
-    background-color: #e7e7e8;
-    border-radius: 50%;
-    margin-left: 14px;
-}
-
-.footer-copyright{
-    height: 31px;
-    width: 300px;
-    font-size: 18px;
-    font-weight: 400;
-    margin: 20px 150px;
-}
-hr{
-    margin-top: 50px;
-}
-
-/*------------------ extra part2------------------ */
 .messi h2{
     text-align: center;
     margin-top: 50px;
 }
+
 table {
     border-collapse: collapse;
-    width: 100%;
+    width: 700px;
     margin-top: 30px;
-  }
+}
   
-  td, th {
+td, th {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
-  }
+}
   
-  tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: #dddddd;
-  }
+}
 
+/* ------------Footer Style------------- */
 
-/*------------------------- media query style----------------------- */
+ footer{
+    height: 213px;
+    width: 483px;
+    margin:158px auto 63px;
+}
 
-/*-----------for tab media query---------------- */
-@media (max-width:1030px) {
+.footer-image{
+    width: 483px;
+    height: 110px;
+}
+
+.footer-image img{
+    width: 100%;
     
+}
 
+.footer-icon{
+    width: 170px;
+    height: 32px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon a{
+    color: #969BAB;
+    background-color: #E7E7E8;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    
+    display: inline-block;
+    width: 32px;
+    height: 29px;
+    padding-top: 3px;
+    border-radius: 50%;
+}
+
+.footer-copyright{
+    height: 31px;
+    width: 236px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px auto;
+}
+
+hr{
+    margin-top: 50px;
+}
+
+
+/*------------------------- Media Query Style----------------------- */
+
+/*-----------For Tab Media Query---------------- */
+
+@media (max-width:1040px) {
+    .header-content{
+        height: auto;
+        display: block;
+        padding-top: 112px;
+        
+    }
+    
     .players{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 30px;
         grid-column-gap: 0;
         width: 690px;
     }
+}
 
-/*------------------ media query for phone --------------------------------------------*/
+
+/*------------------ Media Query For Phone --------------------------------------------*/
 
 @media (max-width:688px) {
 
-    /* -------header media query for phone----- */
+    /* -------Header Media Query For Phone----- */
 
     .header-content{
         height: 695px;
@@ -271,7 +317,7 @@ table {
         margin: 50px 16px 61px 15px;
     }
 
-    /* ---------------main media query  for phone--------------- */
+    /* ---------------Main Players Media Query  For Phone--------------- */
 
     .main{
         margin-top: 47px;   
@@ -281,31 +327,40 @@ table {
         grid-row-gap: 24px;
         grid-column-gap: 0;
         width: 330px;
-    }
-    /*---------------- footer media query--------------- */
+    } 
 
-   /* .footer{
-    width: 160px;
-    margin: 43px  71px 50px 18px;
-   }
-   .footer-icon{
-       height: 32px;
-       width: 170px;
-       margin:50px 95px 238px;
-   
-   }
-   
-   .footer-copyright{
-       height: 31px;
-       width: 300px;
-       font-size: 18px;
-       font-weight: 400;
-       margin: 20px 150px;
-   } */
-   .footer{
-       display: none;
-   }
-    
+    /* -----------------Extra Part1 Media Query---------------- */
+
+    .result h2{
+        font-size: 20px;
+    }
+
+    .result p{
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+      
+    td, th {
+        padding: 2px;
+    }
+      
+
+   /*---------------- Footer Media Query--------------- */
+
+   footer{
+        height: 213px;
+        width: 330px;
+        margin:50px auto;
+    }
+
+
+  .footer-image{
+    width: 330px;
+    height: 100px;
 }
 
-
+}
+    
