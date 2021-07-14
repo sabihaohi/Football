@@ -166,7 +166,8 @@ body{
     background-color: sandybrown;
     padding: 10px 10px;
     margin-right:5px ;
-    padding-right: 5px;
+    margin-left: 5px;
+    padding-right: 10px;
 }
 
 .result a{
