@@ -1,0 +1,311 @@
+/* ---------------google fonts--------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* ---------------header style --------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-content{
+    background-color: #2D25A0;
+    height: 692px;
+    display: flex;
+    
+}
+
+.header-info{
+    color: white;
+    width: 485px;
+    margin: 207px auto 169px 156px;
+}
+
+.header-info h1{
+    font-size: 64px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.header-info p{
+    margin-top: 20px;
+}
+
+ .header-info  a{
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    height: 44px;
+    width: 168px;
+    text-align: center;
+    padding: 10px 24px;
+}
+
+.header-image img{
+    height: 438px;
+    width:556px;
+    margin: 153px 140px 86px 102px;
+}
+/*-------------------- animation effet-------------------------------*/
+.header-content:hover img{
+    transform: rotate(360deg) scale(1);
+    transition: 10s ease-in-out;
+}
+
+
+/*-------------------- player information-------------------- */
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 1050px;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+
+}
+
+.player{
+    height: 444px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px #00000025;
+}
+
+.player-image img{
+    height: 256px;
+    width: 300px;
+}
+
+.player-info h2{
+    margin-top: 17px;
+    height: 40px;
+    width: 300px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    color: #18191F;
+}
+
+.player-info p{
+    margin-top: 10px;
+    margin-bottom: 33px;
+    height: 104px;
+    width: 300px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: #6C6C6C;
+}
+
+/* -------------------------extra part1 style---------------------- */
+
+.final-result{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+
+}
+.result h2{
+    font-size: 30px;
+    text-align: center;
+}
+.result p{
+    background-color:hsl(226, 11%, 63%);
+    width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+.match-ratio{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.argentina {
+    font-weight: 700;
+}
+.argentina span{
+    background-color: sandybrown;
+    padding: 5px 10px;
+    margin-right:5px ;
+}
+.brazil{
+    font-weight: 700;
+}
+.brazil span{
+    background-color: sandybrown;
+    padding: 5px 10px;
+    margin-right:5px ;
+}
+.result a{
+    text-decoration: none;
+    background-image: linear-gradient(white,sandybrown);
+    padding: 8px;
+    border-radius: 20px;
+    color:black;
+}
+.view-all-result{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* ------------footer style------------- */
+ .footer-content{
+     display: flex;
+     justify-content: center;
+
+
+ }
+ .footer{
+    height: 213px;
+    width: 483px;
+    margin:158px 481px 63px 475px;
+
+ }
+.footer-image img{
+    width: 100%;
+}
+
+.footer-icon{
+    height: 32px;
+    width: 200px;
+    margin:20px 156px;
+
+}
+
+.footer-icon a{
+    font-size: 17px;
+    color:hsl(226, 11%, 63%);
+    padding:8px;
+    background-color: #e7e7e8;
+    border-radius: 50%;
+    margin-left: 14px;
+}
+
+.footer-copyright{
+    height: 31px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px 150px;
+}
+hr{
+    margin-top: 50px;
+}
+
+/*------------------ extra part2------------------ */
+.messi h2{
+    text-align: center;
+    margin-top: 50px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+/*------------------------- media query style----------------------- */
+
+@media (max-width:688px) {
+
+    /* -------header media query----- */
+
+    .header-content{
+        height: 695px;
+        display: block;
+        padding-top: 112px;
+        
+    }
+    
+    .header-info{
+        width: 278px;
+        margin: 0 auto 30px auto;
+    }
+    
+    .header-info h1{
+        font-size: 36px;
+    }
+    
+    .header-info p{
+        margin-top: 30px;
+    }
+    
+    .header-image img{
+        height: 260px;
+        width:329px;
+        margin: 50px 16px 61px 15px;
+    }
+
+    /* ---------------main media query--------------- */
+
+    .main{
+        margin-top: 47px;   
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+        grid-column-gap: 0;
+        width: 330px;
+    }
+    /*---------------- footer media query--------------- */
+
+   /* .footer{
+    width: 160px;
+    margin: 43px  71px 50px 18px;
+   }
+   .footer-icon{
+       height: 32px;
+       width: 170px;
+       margin:50px 95px 238px;
+   
+   }
+   
+   .footer-copyright{
+       height: 31px;
+       width: 300px;
+       font-size: 18px;
+       font-weight: 400;
+       margin: 20px 150px;
+   } */
+   .footer{
+       display: none;
+   }
+    
+}
+
+/* ----------------tab media query------------- */
+
+ /* ---------------main media query--------------- */
+@media (max-width:1030px) {
+    
+
+.players{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    grid-column-gap: 0;
+    width: 690px;
+}
+}
+
